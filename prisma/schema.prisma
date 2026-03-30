@@ -29,15 +29,13 @@ model User {
   image          String?
   password       String?
   role           Role      @default(PATIENT)
-  specialty      String?   // Only for DOCTORs (e.g. "Cardiologist")
+  specialty      String?  
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
 
-  // NextAuth relations
   accounts       Account[]
   sessions       Session[]
 
-  // Appointment relations
   appointmentsAsDoctor   Appointment[] @relation("DoctorAppointments")
   appointmentsAsPatient  Appointment[] @relation("PatientAppointments")
 }
@@ -61,7 +59,6 @@ model Appointment {
   @@index([date])
 }
 
-// --- NextAuth Required Models ---
 
 model Account {
   id                String  @id @default(cuid())

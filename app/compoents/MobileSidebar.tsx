@@ -15,7 +15,6 @@ export function MobileSidebar({
 
   return (
     <>
-      {/* Hamburger button */}
       <button
         onClick={() => setOpen(true)}
         className="p-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors"
@@ -30,7 +29,6 @@ export function MobileSidebar({
         </svg>
       </button>
 
-      {/* Overlay */}
       {open && (
         <div
           className="fixed inset-0 bg-black/40 z-40"
@@ -38,13 +36,11 @@ export function MobileSidebar({
         />
       )}
 
-      {/* Drawer */}
       <div
         className={`fixed top-0 left-0 h-full w-72 bg-white z-50 flex flex-col p-5 transition-transform duration-300 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-emerald-700 flex items-center justify-center">
@@ -74,7 +70,6 @@ export function MobileSidebar({
           </button>
         </div>
 
-        {/* Nav */}
         <nav className="flex-1 space-y-1">
           <Link
             href="/dashboard"
@@ -184,7 +179,6 @@ export function MobileSidebar({
           </Link>
         </nav>
 
-        {/* User + logout */}
         <div className="rounded-xl bg-slate-50 border border-slate-200 p-3 flex items-center gap-3">
           <div className="w-9 h-9 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold flex-shrink-0">
             {initials}

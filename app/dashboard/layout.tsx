@@ -24,7 +24,6 @@ export default async function DashboardLayout({
       <DesktopSidebar user={user} initials={initials} />
 
       <div className="flex-1 flex flex-col">
-        {/* Mobile top bar */}
         <div className="md:hidden flex items-center justify-between bg-white border-b border-slate-200 px-4 py-3">
           <div className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-lg bg-emerald-700 flex items-center justify-center">

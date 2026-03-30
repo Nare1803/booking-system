@@ -97,7 +97,6 @@ export function BookingForm({ doctors }: { doctors: Doctor[] }) {
 
   return (
     <div className="bg-white rounded-2xl border border-slate-200 p-6 space-y-7 max-w-lg animate-fade-up">
-      {/* Step 1 — Doctor */}
       <div>
         <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-3">
           Step 1 — Choose Doctor
@@ -148,7 +147,6 @@ export function BookingForm({ doctors }: { doctors: Doctor[] }) {
         </div>
       </div>
 
-      {/* Step 2 — Date */}
       <div>
         <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-3">
           Step 2 — Pick a Date
@@ -162,7 +160,6 @@ export function BookingForm({ doctors }: { doctors: Doctor[] }) {
         />
       </div>
 
-      {/* Step 3 — Slots */}
       {selectedDoctor && selectedDate && (
         <div className="animate-fade-up">
           <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-3">
@@ -195,7 +192,6 @@ export function BookingForm({ doctors }: { doctors: Doctor[] }) {
         </div>
       )}
 
-      {/* Notes */}
       <div>
         <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-3">
           Notes (optional)

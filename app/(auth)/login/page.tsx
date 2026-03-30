@@ -92,10 +92,8 @@ export default function LoginPage() {
         </div>
       </div>
 
-      {/* Right form panel */}
       <div className="flex-1 flex items-center justify-center p-8">
         <div className="w-full max-w-sm animate-fade-up">
-          {/* Mobile logo */}
           <div className="lg:hidden flex items-center gap-2 mb-10">
             <div className="w-8 h-8 rounded-lg bg-emerald-700 flex items-center justify-center">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

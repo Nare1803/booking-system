@@ -37,7 +37,6 @@ export default async function DashboardPage() {
         </p>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {stats.map((s) => (
           <div
@@ -52,7 +51,6 @@ export default async function DashboardPage() {
         ))}
       </div>
 
-      {/* CTA */}
       {user?.role === "PATIENT" && (
         <Link
           href="/dashboard/book"
@@ -84,7 +82,6 @@ export default async function DashboardPage() {
         </Link>
       )}
 
-      {/* Upcoming */}
       <div>
         <div className="flex items-center justify-between mb-3">
           <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest">

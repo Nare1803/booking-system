@@ -20,7 +20,7 @@ export interface AppointmentWithRelations {
 }
 
 export type TimeSlot = {
-  time: string;       // "09:00"
+  time: string;       
   available: boolean;
 };
 
